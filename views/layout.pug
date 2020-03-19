@@ -2,11 +2,12 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/assets/style.css')
+    meta(charset=utf-8)
+    link(rel='stylesheet', href='/assets/app.css')
   body
     header
       include header
-    .neutralino-app
+    #neutralino-app
       block content
     script(src="/neutralino.js")
     script(src="/assets/app.js")
