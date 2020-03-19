@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/assets/style.css')
+  body
+    header
+      include header
+    .neutralino-app
+      block content
+    script(src="/neutralino.js")
+    script(src="/assets/app.js")
+    footer
+      include footer
