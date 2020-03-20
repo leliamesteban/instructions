@@ -22,10 +22,12 @@
 
 ### Configuration for Neutralino, a framework to build cross platform apps using web technologies
 
-# Generate the HTML files
-
-npx eleventy
-
-# Run the application
-
-./neutralino-linux
+if [[ $# -gt 0 ]]
+then
+  cat <<< "$(jq '.mode |= "window"' < app/settings.json)" > app/settings.json
+  echo "Running in" $(jq '.mode' < app/settings.json) "mode"
+  echo "Generating the HTML files\n"
+  npx eleventy
+  echo Running the application
+  ./neutralino-linux
+fi
