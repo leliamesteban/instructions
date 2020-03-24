@@ -1,6 +1,7 @@
 module.exports = {
   dir: {
     input: "views",
-    output: "app"
+    output: "app",
+    data: "../storage"
   }
 };
