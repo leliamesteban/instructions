@@ -29,5 +29,5 @@ then
   echo "Generating the HTML files\n"
   npx eleventy && \
   echo Running the application
-  ./neutralino-linux
+  netlify dev
 fi
