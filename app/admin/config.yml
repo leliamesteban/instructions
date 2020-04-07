@@ -1,5 +1,5 @@
 backend:
   name: git-gateway
-  repo: leliamesteban/defaultApp
+  repo: leliamesteban/instructions
 
 publish_mode: editorial_workflow
